@@ -3,8 +3,8 @@ const app = express();
 const PORT = 3000;
 
 app 
- .get('/', (req,res) => {
-     res.send('Hello World');
+ .get('/details/:id', (req,res) => {
+     res.send('id jerst ' + req.params.id);
  })
  .post('/user', (req,res) => {
     res.send('zmieniono dane użytkownika');
