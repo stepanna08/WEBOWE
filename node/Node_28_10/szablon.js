@@ -1,0 +1,10 @@
+import express from 'express';
+
+const app = express();
+const port = 3000;
+
+const szablon1 = express.Router();
+szablon1
+    .get('/list', (req, res) => {
+        
+    })
